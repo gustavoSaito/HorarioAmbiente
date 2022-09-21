@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+    <script>
+        var d = new Date();
+        let horas = d.getHours();
+        let minutos = d.getMinutes();
+        function alterBackground(){
+            if(horas <= 12 ){
+                document.body.style.backgroundColor = "#9189F1";
+            }else if(horas <= 17 && minutos <= 30 ){
+                document.body.style.backgroundColor = "#F1DE89";
+            }else{
+                document.body.style.backgroundColor = "#0E0670";
+        }
+    }
+    </script>    
+</head>
+<body onload="alterBackground()">
+<div  class="backgroundCData">
+
+</div>
+</body>
+</html>

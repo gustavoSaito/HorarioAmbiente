@@ -1,0 +1,16 @@
+.backgroundCData{
+    height: 200px;
+    width: 100%;
+    background-color: white;
+
+
+    
+}
+body{
+    margin: auto;
+    padding: auto;
+    display: flex;
+    height: 550px;
+    align-items: center;
+    justify-content: center;
+}
