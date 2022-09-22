@@ -17,6 +17,7 @@
                 document.body.style.backgroundColor = "#9189F1";
             }else if(horas <= 17 && minutos <= 30 ){
                 document.body.style.backgroundColor = "#F1DE89";
+                document.getElementsByClassName("conteudoImg");
             }else{
                 document.body.style.backgroundColor = "#0E0670";
         }
@@ -24,8 +25,10 @@
     </script>    
 </head>
 <body onload="alterBackground()">
-<div  class="backgroundCData">
+<section  class="backgroundCData">
+    <div class="conteudoTexto"></div>
+    <div class="conteudoImg"></div>
 
-</div>
+</section>
 </body>
 </html>
