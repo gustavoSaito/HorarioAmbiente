@@ -12,22 +12,34 @@
         var d = new Date();
         let horas = d.getHours();
         let minutos = d.getMinutes();
+        var conteudoImg = document.getElementsByClassName("conteudoImg");
         function alterBackground(){
-            if(horas <= 12 ){
+            if(horas < 12  ){
+                alert(horas);
                 document.body.style.backgroundColor = "#9189F1";
-            }else if(horas <= 17 && minutos <= 30 ){
+                var textoTempo = document.getElementById("textoTempo");
+                textoTempo.innerText = "Bom dia";
+                document.getElementsByClassName("conteudoImg").style.backgroundColor = red;
+            }else if(horas <= 17 ){
                 document.body.style.backgroundColor = "#F1DE89";
-                document.getElementsByClassName("conteudoImg");
+                var textoTempo = document.getElementById("textoTempo");
+                textoTempo.innerText = "Boa tarde";
+                document.getElementsByClassName("conteudoImg").style.backgroundColor = blue;
             }else{
                 document.body.style.backgroundColor = "#0E0670";
+                var textoTempo = document.getElementById("textoTempo");
+                textoTempo.innerText = "Boa noite";
+                document.getElementsByClassName("conteudoImg").style.backgroundColor = black;
         }
     }
     </script>    
 </head>
 <body onload="alterBackground()">
 <section  class="backgroundCData">
-    <div class="conteudoTexto"></div>
-    <div class="conteudoImg"></div>
+    <div class="conteudoTexto">
+        <h2 id="textoTempo" class="textoTempo"></h2>
+    </div>
+    <div class="conteudoImg"><img src="\img\manha1.png" alt=""></div>
 
 </section>
 </body>

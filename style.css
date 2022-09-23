@@ -13,9 +13,9 @@
     height: 100px;
     background-color: black;
     order: 1;
-    text-align: center;
-    font-size: medium;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .conteudoImg{
     
@@ -35,4 +35,8 @@ body{
     height: 550px;
     align-items: center;
     justify-content: center;
+}
+.textoTempo{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
